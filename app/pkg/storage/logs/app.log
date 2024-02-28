@@ -1,0 +1,205 @@
+[90m5:02PM[0m [32mINF[0m [1mcmd/first_grpc/main.go:16[0m[36m >[0m [1midi nahui[0m
+[90m12:20PM[0m [31mFTL[0m [1mFailed to listen on port 88088, error: listen tcp: address 88088: invalid port[0m
+[90m12:23PM[0m [32mINF[0m [1mcmd/first_grpc/main.go:17[0m[36m >[0m [36minfo=[0mcheck
+[90m12:24PM[0m [32mINF[0m [1mcmd/first_grpc/main.go:17[0m[36m >[0m [1minfo: check[0m
+[90m12:24PM[0m [32mINF[0m [1mcmd/first_grpc/main.go:17[0m[36m >[0m [1mcheck[0m
+[90m12:24PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:24PM[0m [31mFTL[0m [1mFailed to listen on port 88088, error: listen tcp: address 88088: invalid port[0m
+[90m12:25PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:27PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:27PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:27PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:27PM[0m [31mFTL[0m [1mFailed to listen on port 88088, error: listen tcp: address 88088: invalid port[0m
+[90m12:28PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:28PM[0m [31mFTL[0m [1mFailed to listen on port 88088, error: listen tcp: address 88088: invalid port[0m
+[90m12:30PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:30PM[0m [31mFTL[0m [1mFailed to listen on port :88088, error: listen tcp: address 88088: invalid port[0m
+[90m12:32PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:32PM[0m [31mFTL[0m [1mFailed to listen on port :88088, error: listen tcp: address 88088: invalid port[0m
+[90m12:36PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:36PM[0m [31mFTL[0m [1mFailed to listen on port :88088, error: listen tcp: address 88088: invalid port[0m
+[90m12:37PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:37PM[0m [31mFTL[0m [1mServer is running on port 44044[0m
+[90m12:37PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:37PM[0m [32mINF[0m [1minternal/app/grpc/app.go:40[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m12:37PM[0m [32mINF[0m [1minternal/app/grpc/app.go:48[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m12:37PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:37PM[0m [32mINF[0m [1minternal/app/grpc/app.go:40[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m12:43PM[0m [32mINF[0m [1minternal/app/grpc/app.go:48[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m12:43PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:43PM[0m [32mINF[0m [1minternal/app/grpc/app.go:40[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m12:44PM[0m [32mINF[0m [1minternal/app/grpc/app.go:48[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m12:44PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m12:44PM[0m [32mINF[0m [1minternal/app/grpc/app.go:40[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:23PM[0m [32mINF[0m [1minternal/app/grpc/app.go:48[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:23PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m1:23PM[0m [32mINF[0m [1minternal/app/grpc/app.go:39[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:32PM[0m [32mINF[0m [1minternal/app/grpc/app.go:47[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:32PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m1:32PM[0m [32mINF[0m [1minternal/app/grpc/app.go:39[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:57PM[0m [32mINF[0m [1minternal/app/grpc/app.go:47[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:57PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m1:57PM[0m [32mINF[0m [1minternal/app/grpc/app.go:39[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:59PM[0m [32mINF[0m [1minternal/app/grpc/app.go:47[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:59PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m1:59PM[0m [32mINF[0m [1minternal/app/grpc/app.go:39[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m2:16PM[0m [32mINF[0m [1minternal/app/grpc/app.go:47[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:16PM[0m [32mINF[0m [1minternal/app/grpc/app.go:31[0m[36m >[0m [1mServer started[0m
+[90m2:16PM[0m [32mINF[0m [1minternal/app/grpc/app.go:39[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m7:00PM[0m [31mFTL[0m [1m../../../../../snap/go/10489/src/runtime/proc.go:267[0m[36m >[0m [1msql: unknown driver "postgres" (forgotten import?)[0m
+[90m7:01PM[0m [32mINF[0m [1minternal/app/grpc/app.go:40[0m[36m >[0m [1mServer started[0m
+[90m7:01PM[0m [32mINF[0m [1minternal/app/grpc/app.go:48[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m7:04PM[0m [32mINF[0m [1minternal/app/grpc/app.go:56[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:04PM[0m [31mFTL[0m [1m../../../../../snap/go/10489/src/runtime/proc.go:267[0m[36m >[0m [1mdial tcp 127.0.0.1:5432: connect: connection refused[0m
+[90m7:06PM[0m [31mFTL[0m [1m../../../../../snap/go/10489/src/runtime/proc.go:267[0m[36m >[0m [1mdial tcp 127.0.0.1:5432: connect: connection refused[0m
+[90m7:09PM[0m [32mINF[0m [1minternal/app/grpc/app.go:40[0m[36m >[0m [1mServer started[0m
+[90m7:09PM[0m [32mINF[0m [1minternal/app/grpc/app.go:48[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m8:17PM[0m [32mINF[0m [1minternal/app/grpc/app.go:56[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m10:43AM[0m [31mFTL[0m [1m../../../../../snap/go/10489/src/runtime/proc.go:267[0m[36m >[0m [1mdial tcp 127.0.0.1:5432: connect: connection refused[0m
+[90m10:44AM[0m [32mINF[0m [1minternal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m10:44AM[0m [32mINF[0m [1minternal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m10:44AM[0m [32mINF[0m [1minternal/grpc/auth/sign-up.go:32[0m[36m >[0m [1mcreated new user[0m [36mid=[0mdeserunt
+[90m10:45AM[0m [32mINF[0m [1minternal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m10:45AM[0m [32mINF[0m [1minternal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m10:45AM[0m [32mINF[0m [1minternal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m10:46AM[0m [32mINF[0m [1minternal/grpc/auth/sign-up.go:32[0m[36m >[0m [1mcreated new user[0m [36memail=[0mdeserunt
+[90m10:46AM[0m [32mINF[0m [1minternal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m12:59PM[0m [31mFTL[0m [1m../../../../../snap/go/10489/src/runtime/proc.go:267[0m[36m >[0m [1mdial tcp 127.0.0.1:5432: connect: connection refused[0m
+[90m12:59PM[0m [32mINF[0m [1minternal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m12:59PM[0m [31mFTL[0m [1mFailed to listen on port :44044, error: listen tcp :44044: bind: address already in use[0m
+[90m1:00PM[0m [32mINF[0m [1minternal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m1:00PM[0m [31mFTL[0m [1mFailed to listen on port :44044, error: listen tcp :44044: bind: address already in use[0m
+[90m1:01PM[0m [32mINF[0m [1minternal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m1:01PM[0m [32mINF[0m [1minternal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:01PM[0m [32mINF[0m [1minternal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:01PM[0m [32mINF[0m [1minternal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m1:01PM[0m [32mINF[0m [1minternal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:02PM[0m [32mINF[0m [1minternal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:02PM[0m [32mINF[0m [1minternal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m1:02PM[0m [32mINF[0m [1minternal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:04PM[0m [32mINF[0m [1minternal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:05PM[0m [32mINF[0m [1minternal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m1:05PM[0m [32mINF[0m [1minternal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:05PM[0m [31mERR[0m [1minternal/grpc/auth/sign-up.go:28[0m[36m >[0m [1mBad Request: Invalid email format[0m [36mcd=[0m"internal/service/authsign-up.go line: 40"
+[90m1:07PM[0m [32mINF[0m [1minternal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:07PM[0m [32mINF[0m [1minternal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m1:07PM[0m [32mINF[0m [1minternal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:07PM[0m [31mERR[0m [1minternal/grpc/auth/sign-up.go:28[0m[36m >[0m [1mBad Request: Invalid email format[0m [36mfile-info=[0m"internal/service/auth/sign-up.go line: 40"
+[90m1:07PM[0m [31mERR[0m [1minternal/grpc/auth/sign-up.go:28[0m[36m >[0m [1mBad Request: Invalid email format[0m [36mfile-info=[0m"internal/service/auth/sign-up.go line: 40"
+[90m1:07PM[0m [31mERR[0m [1minternal/grpc/auth/sign-up.go:28[0m[36m >[0m [1mBad Request: Invalid email format[0m [36mfile-info=[0m"internal/service/auth/sign-up.go line: 40"
+[90m1:07PM[0m [32mINF[0m [1minternal/grpc/auth/sign-up.go:32[0m[36m >[0m [1mcreated new user[0m [36memail=[0mkrasavachic@gmail.com
+[90m1:10PM[0m [32mINF[0m [1minternal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:42PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m1:42PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:42PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:56PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m1:56PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m1:56PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m3:19PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m3:19PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m3:35PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m3:35PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m3:35PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m3:35PM[0m [32mINF[0m [1mapp/internal/grpc/auth/sign-up.go:32[0m[36m >[0m [1mcreated new user[0m [36memail=[0mkrasavachic@gmail.com
+[90m3:36PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m3:36PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m3:36PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m3:36PM[0m [31mERR[0m [1mapp/internal/grpc/auth/sign-up.go:28[0m[36m >[0m [1mBad Request: User already exists[0m [36mfile-info=[0m"internal/storage/postgres/auth.go line: 47"
+[90m3:37PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m4:46PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m4:46PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m4:46PM[0m [31mERR[0m [1mapp/internal/grpc/auth/sign-up.go:28[0m[36m >[0m [1mBad Request: User already exists[0m [36mfile-info=[0m"internal/storage/postgres/auth.go line: 47"
+[90m6:59PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m6:59PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m6:59PM[0m [31mERR[0m [1mapp/internal/grpc/auth/sign-in.go:28[0m[36m >[0m [1mBad Request: Invalid email format[0m [36mfile-info=[0m"internal/lib/validation/user_validation.go line: 60"
+[90m7:00PM[0m [32mINF[0m [1mapp/internal/grpc/auth/sign-in.go:32[0m[36m >[0m [1muser signed in[0m [36mid=[0m1
+[90m7:00PM[0m [31mERR[0m [1mapp/internal/grpc/auth/sign-in.go:28[0m[36m >[0m [1mBad Request: Wrong password[0m [36mfile-info=[0m"internal/lib/bcrypt/password.go line: 22"
+[90m7:00PM[0m [32mINF[0m [1mapp/internal/grpc/auth/sign-in.go:32[0m[36m >[0m [1muser signed in[0m [36mid=[0m1
+[90m7:00PM[0m [31mERR[0m [1mapp/internal/grpc/auth/sign-in.go:28[0m[36m >[0m [1mBad Request: Wrong email[0m [36mfile-info=[0m"internal/storage/postgres/auth.go line: 66"
+[90m7:00PM[0m [32mINF[0m [1mapp/internal/grpc/auth/sign-in.go:32[0m[36m >[0m [1muser signed in[0m [36mid=[0m1
+[90m7:00PM[0m [31mERR[0m [1mapp/internal/grpc/auth/sign-up.go:28[0m[36m >[0m [1mBad Request: User already exists[0m [36mfile-info=[0m"internal/storage/postgres/auth.go line: 48"
+[90m7:01PM[0m [32mINF[0m [1mapp/internal/grpc/auth/sign-up.go:32[0m[36m >[0m [1msigned up a new user[0m [36mid=[0m5
+[90m7:01PM[0m [32mINF[0m [1mapp/internal/grpc/auth/sign-in.go:32[0m[36m >[0m [1muser signed in[0m [36mid=[0m5
+[90m7:01PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m6:47PM[0m [31mFTL[0m [1m../../../../../snap/go/10506/src/runtime/proc.go:271[0m[36m >[0m [1mdial tcp 127.0.0.1:5432: connect: connection refused[0m
+[90m7:14PM[0m [31mFTL[0m [1m../../../../../snap/go/10506/src/runtime/proc.go:271[0m[36m >[0m [1mdial tcp 127.0.0.1:5432: connect: connection refused[0m
+[90m7:14PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m7:14PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m7:14PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:20PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m7:20PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m7:23PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:23PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m7:23PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m7:23PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:24PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:41[0m[36m >[0m [1mServer started[0m
+[90m7:24PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:49[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m7:24PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:57[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:25PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:42[0m[36m >[0m [1mServer started[0m
+[90m7:25PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:50[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m9:44AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:58[0m[36m >[0m [1mGraceful stop the server, signal: terminated[0m
+[90m4:09PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:44[0m[36m >[0m [1mServer started[0m
+[90m4:09PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:52[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m4:09PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:60[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m4:09PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:44[0m[36m >[0m [1mServer started[0m
+[90m4:09PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:52[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m4:09PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:60[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m4:10PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:44[0m[36m >[0m [1mServer started[0m
+[90m4:10PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:52[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m4:10PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:60[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m4:10PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:44[0m[36m >[0m [1mServer started[0m
+[90m4:10PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:52[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m4:10PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:60[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m4:11PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:44[0m[36m >[0m [1mServer started[0m
+[90m4:11PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:52[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m6:45PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mServer started[0m
+[90m6:45PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m6:45PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m6:50PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mServer started[0m
+[90m6:50PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m6:51PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mServer started[0m
+[90m6:51PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:32[0m[36m >[0m [1mRest server started[0m
+[90m6:51PM[0m [31mFTL[0m [1mFailed to listen on port :44044, error: listen tcp :44044: bind: address already in use[0m
+[90m6:52PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mServer started[0m
+[90m6:52PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:32[0m[36m >[0m [1mRest server started[0m
+[90m6:52PM[0m [31mFTL[0m [1mFailed to listen on port :44044, error: listen tcp :44044: bind: address already in use[0m
+[90m6:52PM[0m [31mFTL[0m [1mFailed to launch the server: listen tcp :8080: bind: address already in use[0m
+[90m6:57PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:32[0m[36m >[0m [1mRest server started[0m
+[90m6:57PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mGRPC server started[0m
+[90m6:57PM[0m [31mFTL[0m [1mFailed to launch the server: listen tcp :8080: bind: address already in use[0m
+[90m6:59PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mGRPC server started[0m
+[90m6:59PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:32[0m[36m >[0m [1mRest server started[0m
+[90m6:59PM[0m [31mFTL[0m [1mFailed to listen on port :44044, error: listen tcp :44044: bind: address already in use[0m
+[90m7:01PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mGRPC server started[0m
+[90m7:01PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:32[0m[36m >[0m [1mRest server started[0m
+[90m7:01PM[0m [31mFTL[0m [1mFailed to listen on port :44044, error: listen tcp :44044: bind: address already in use[0m
+[90m7:01PM[0m [31mFTL[0m [1mFailed to launch the server: listen tcp :8080: bind: address already in use[0m
+[90m7:02PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: terminated[0m
+[90m7:02PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:49[0m[36m >[0m [1mGraceful stop the server, signal: terminated[0m
+[90m7:02PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:58[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m7:02PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mGRPC server started[0m
+[90m7:02PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:32[0m[36m >[0m [1mRest server started[0m
+[90m7:02PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m7:03PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:03PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:50[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:03PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:59[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mGRPC server started[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:32[0m[36m >[0m [1mRest server started[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:50[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:59[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mGRPC server started[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:32[0m[36m >[0m [1mRest server started[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:50[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:04PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:59[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m7:05PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:39[0m[36m >[0m [1mGRPC server started[0m
+[90m7:05PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:32[0m[36m >[0m [1mRest server started[0m
+[90m7:05PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m7:07PM[0m [32mINF[0m [1mapp/internal/grpc/auth/sign-up.go:33[0m[36m >[0m [1msigned up a new user[0m [36mid=[0m1
+[90m7:08PM[0m [32mINF[0m [1mapp/internal/grpc/auth/sign-in.go:33[0m[36m >[0m [1muser signed in[0m [36mid=[0m1
+[90m7:08PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:08PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:50[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m7:08PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:59[0m[36m >[0m [1mHTTP server shutdown completed[0m

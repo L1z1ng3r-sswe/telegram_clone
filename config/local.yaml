@@ -1,0 +1,10 @@
+env: "local" # dev, prod
+postgres_path: "host=localhost port=5432 password=asyl12345. user=postgres dbname=postgres sslmode=disable"
+grpc:
+  port: 44044
+  timeout: 5s
+rest:
+  port: "8080"
+access_token_exp: 1h
+refresh_token_exp: 720h
+secret_key: "fjaksjdfkldsj_sdjlfjdslfjdklja_fdjfkd_ljfdlsjfk_l3-94403920jlfkdj"

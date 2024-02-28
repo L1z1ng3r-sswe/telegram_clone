@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL PRIMARY KEY,
+  email TEXT NOT NULL UNIQUE,
+  password TEXT NOT NULL
+);
+
+-- CREATE TABLE IF NOT EXISTS chats (
+--   id SERIAL PRIMARY KEY,
+--   first_user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+--   second_user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE
+-- );
+
+-- CREATE TABLE IF NOT EXISTS messages (
+--   id SERIAL PRIMARY KEY,
+--   chat_id BIGINT NOT NULL REFERENCES chats(id) ON DELETE CASCADE,
+--   sender_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+--   receiver_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+--   content TEXT NOT NULL,
+--   timestamp TIMESTAMP NOT NULL
+-- );
