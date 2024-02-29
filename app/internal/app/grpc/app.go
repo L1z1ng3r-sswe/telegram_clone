@@ -6,10 +6,10 @@ import (
 	"strconv"
 
 	"github.com/L1z1ng3r-sswe/telegram_clone/app/internal/config"
-	auth_grpc "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/grpc/auth"
+	auth_grpc "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/grpc/server/auth"
+	auth_service_grpc "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/grpc/service/auth"
+	auth_postgres_grpc "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/grpc/storage/postgres/auth"
 	logger "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/lib/zerolog"
-	auth_service "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/service/auth"
-	auth_postgres "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/storage/postgres/auth"
 	"github.com/jmoiron/sqlx"
 	"google.golang.org/grpc"
 )
@@ -21,11 +21,12 @@ type App struct {
 }
 
 func New(log *logger.Logger, cfg *config.Config, postgresDB *sqlx.DB) *App {
+
 	gRPCServer := grpc.NewServer()
 
 	// auth
-	authPostgres := auth_postgres.New(postgresDB)
-	authService := auth_service.New(authPostgres)
+	authPostgres := auth_postgres_grpc.New(postgresDB)
+	authService := auth_service_grpc.New(authPostgres)
 	auth_grpc.Register(log, gRPCServer, &authService, cfg.AccessTokenExp, cfg.RefreshTokenExp, cfg.SecretKey)
 
 	return &App{

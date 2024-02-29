@@ -203,3 +203,10 @@
 [90m7:08PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
 [90m7:08PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:50[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
 [90m7:08PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:59[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m10:17AM[0m [31mFTL[0m [1m../../../../../snap/go/10506/src/runtime/asm_amd64.s:1695[0m[36m >[0m [1mdial tcp 127.0.0.1:5432: connect: connection refused[0m
+[90m10:17AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:32[0m[36m >[0m [1mRest server started[0m
+[90m10:17AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:40[0m[36m >[0m [1mGRPC server started[0m
+[90m10:17AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:48[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m10:22AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:56[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m10:22AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:50[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m10:22AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:59[0m[36m >[0m [1mHTTP server shutdown completed[0m
