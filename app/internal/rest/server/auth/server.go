@@ -11,7 +11,7 @@ import (
 
 type service interface {
 	SignUp(models_rest.UserSignUp, time.Duration, time.Duration, string) (models_rest.Tokens, models_rest.UserSignUp, error, string, string, int, string)
-	SignIn(models_rest.UserSignIn, time.Duration, time.Duration, string) (models_rest.Tokens, models_rest.UserSignIn, error, string, string, int, string)
+	SignIn(models_rest.UserSignIn, time.Duration, time.Duration, string) (models_rest.Tokens, models_rest.UserDB, error, string, string, int, string)
 }
 
 type userServerAPI struct {

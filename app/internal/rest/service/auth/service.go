@@ -9,7 +9,7 @@ import (
 
 type repo interface {
 	SignUp(user models_rest.UserSignUp) (models_rest.UserSignUp, error, string, string, int, string)
-	SignIn(user models_rest.UserSignIn) (models_rest.UserSignIn, error, string, string, int, string)
+	SignIn(user models_rest.UserSignIn) (models_rest.UserDB, error, string, string, int, string)
 }
 
 type Service struct {
