@@ -4,17 +4,34 @@ CREATE TABLE IF NOT EXISTS users (
   password TEXT NOT NULL
 );
 
--- CREATE TABLE IF NOT EXISTS chats (
---   id SERIAL PRIMARY KEY,
---   first_user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
---   second_user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE
--- );
+CREATE TABLE IF NOT EXISTS bi_chats (
+  id TEXT PRIMARY KEY, 
+  first_user_id BIGINT REFERENCES users(id) ON DELETE CASCADE,
+  second_user_id BIGINT REFERENCES users(id) ON DELETE CASCADE
+);
 
--- CREATE TABLE IF NOT EXISTS messages (
---   id SERIAL PRIMARY KEY,
---   chat_id BIGINT NOT NULL REFERENCES chats(id) ON DELETE CASCADE,
---   sender_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
---   receiver_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
---   content TEXT NOT NULL,
---   timestamp TIMESTAMP NOT NULL
--- );
+CREATE TABLE IF NOT EXISTS communities (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE,
+  owner_id BIGINT REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS community_members (
+  id text PRIMARY KEY,
+  community_id BIGINT REFERENCES communities(id) ON DELETE CASCADE,
+  user_id BIGINT REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS community_messages (
+  id SERIAL PRIMARY KEY,
+  sender_id BIGINT REFERENCES users(id) ON DELETE CASCADE,
+  community_id BIGINT REFERENCES communities(id) ON DELETE CASCADE,
+  content TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS bi_chat_messages (
+  id SERIAL PRIMARY KEY,
+  sender_id BIGINT REFERENCES users(id) ON DELETE CASCADE,
+  bi_chat_id TEXT REFERENCES bi_chats(id) ON DELETE CASCADE,
+  content TEXT NOT NULL
+);

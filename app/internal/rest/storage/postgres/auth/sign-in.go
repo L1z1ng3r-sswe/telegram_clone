@@ -1,4 +1,4 @@
-package chat_postgres_rest
+package auth_postgres_rest
 
 import (
 	"database/sql"
@@ -7,7 +7,7 @@ import (
 	models_rest "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/rest/domain/models"
 )
 
-func (r *repo) SessionCreation(user models_rest.UserSignIn) (models_rest.UserDB, error, string, string, int, string) {
+func (r *repo) SignIn(user models_rest.UserSignIn) (models_rest.UserDB, error, string, string, int, string) {
 	stmt, err := r.db.Preparex(`SELECT id, email, password  FROM users WHERE email=$1 LIMIT 1`)
 	defer stmt.Close()
 	if err != nil {

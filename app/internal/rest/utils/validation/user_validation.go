@@ -2,6 +2,7 @@ package validation_rest
 
 import (
 	"errors"
+	"fmt"
 	"net/http"
 	"regexp"
 )
@@ -54,6 +55,7 @@ func ValidationSignIn(email, password string) (error, string, string, int, strin
 }
 
 func isEmailValidSignIn(email string) (error, string, string, int, string) {
+	fmt.Println(email)
 	emailRegex := regexp.MustCompile(`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`)
 	if !emailRegex.MatchString(email) {
 		return errors.New("Invalid email format"), "Bad Request", "Invalid email format", http.StatusBadRequest, getFileInfo("user_validation.go")

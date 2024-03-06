@@ -12,12 +12,12 @@ type repo interface {
 	SignIn(user models_rest.UserSignIn) (models_rest.UserDB, error, string, string, int, string)
 }
 
-type Service struct {
+type service struct {
 	repo repo
 }
 
-func New(repo repo) Service {
-	return Service{
+func New(repo repo) *service {
+	return &service{
 		repo: repo,
 	}
 }

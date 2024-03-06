@@ -1,27 +1,39 @@
 package auth_rest
 
 import (
+	"fmt"
 	"net/http"
 
 	models_rest "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/rest/domain/models"
 	"github.com/gin-gonic/gin"
+	"github.com/gorilla/websocket"
 )
 
-func (server *server) SignUp(ctx *gin.Context) {
-	var user models_rest.UserSignUp
+var upgrader = websocket.Upgrader{
+	ReadBufferSize:  1024,
+	WriteBufferSize: 1024,
+	CheckOrigin: func(r *http.Request) bool {
+		return true
+	},
+}
+
+func (server *server) SignIn(ctx *gin.Context) {
+	var user models_rest.UserSignIn
 	if err := ctx.ShouldBindJSON(&user); err != nil {
 		server.log.Err("Internal Server Error", err.Error(), "")
 		ctx.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{"Internal Server Error": err.Error()})
 		return
 	}
 
-	tokens, userDB, err, errKey, errMsg, code, fileInfo := server.service.SignUp(user, server.accessTokenExp, server.refreshTokenExp, server.secretKey)
+	fmt.Println(user)
+
+	tokens, userDB, err, errKey, errMsg, code, fileInfo := server.service.SignIn(user, server.accessTokenExp, server.refreshTokenExp, server.secretKey)
 	if err != nil {
 		server.log.Err(errKey, errMsg, fileInfo)
 		ctx.AbortWithStatusJSON(code, gin.H{errKey: errMsg})
 		return
 	}
 
-	server.log.Inf("signed up a new user", "id", userDB.Id)
+	server.log.Inf("user signed in", "id", userDB.Id)
 	ctx.JSON(http.StatusOK, gin.H{"access_token": tokens.AccessToken, "refresh_token": tokens.RefreshToken})
 }

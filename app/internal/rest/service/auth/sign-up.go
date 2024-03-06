@@ -10,7 +10,7 @@ import (
 	validation_rest "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/rest/utils/validation"
 )
 
-func (s *Service) SignUp(user models_rest.UserSignUp, accessTokenExp time.Duration, refreshTokenExp time.Duration, secretKey string) (models_rest.Tokens, models_rest.UserSignUp, error, string, string, int, string) {
+func (s *service) SignUp(user models_rest.UserSignUp, accessTokenExp time.Duration, refreshTokenExp time.Duration, secretKey string) (models_rest.Tokens, models_rest.UserSignUp, error, string, string, int, string) {
 	// validation
 	err, errKey, errMsg, code, fileInfo := validation_rest.ValidationSignUp(user.Email, user.Password)
 	if err != nil {

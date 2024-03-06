@@ -37,7 +37,6 @@ func New(log *logger.Logger, cfg *config.Config, postgresDB *sqlx.DB) *App {
 }
 
 func (a *App) MustRun() {
-	a.log.AppInf("GRPC server started")
 
 	l, err := net.Listen("tcp", ":"+strconv.Itoa(a.port))
 

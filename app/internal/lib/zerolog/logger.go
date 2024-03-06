@@ -16,8 +16,7 @@ type Logger struct {
 }
 
 func (logger *Logger) Ftl(msg string) {
-	logger.Logger.Fatal().
-		CallerSkipFrame(3).Msg(msg)
+	logger.Logger.Fatal().Msg(msg)
 }
 
 func (logger *Logger) Request(method, path string, status int, latency time.Duration) {
