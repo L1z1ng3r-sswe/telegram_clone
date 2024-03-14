@@ -10,6 +10,13 @@ CREATE TABLE IF NOT EXISTS bi_chats (
   second_user_id BIGINT REFERENCES users(id) ON DELETE CASCADE
 );
 
+CREATE TABLE IF NOT EXISTS bi_chat_messages (
+  id SERIAL PRIMARY KEY,
+  sender_id BIGINT REFERENCES users(id) ON DELETE CASCADE,
+  bi_chat_id TEXT REFERENCES bi_chats(id) ON DELETE CASCADE,
+  content TEXT NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS communities (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL UNIQUE,
@@ -29,9 +36,3 @@ CREATE TABLE IF NOT EXISTS community_messages (
   content TEXT NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS bi_chat_messages (
-  id SERIAL PRIMARY KEY,
-  sender_id BIGINT REFERENCES users(id) ON DELETE CASCADE,
-  bi_chat_id TEXT REFERENCES bi_chats(id) ON DELETE CASCADE,
-  content TEXT NOT NULL
-);

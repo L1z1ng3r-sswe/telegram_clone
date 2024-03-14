@@ -8,6 +8,7 @@ import (
 
 	"github.com/L1z1ng3r-sswe/telegram_clone/app/internal/config"
 	logger "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/lib/zerolog"
+	chat_redis_rest "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/rest/cache/chat"
 	auth_rest "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/rest/server/auth"
 	chat_rest "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/rest/server/chat"
 	auth_service_rest "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/rest/service/auth"
@@ -36,7 +37,8 @@ func New(log *logger.Logger, cfg *config.Config, postgresDB *sqlx.DB) *App {
 
 	// chat dep
 	chatRepo := chat_postgres_rest.New(postgresDB)
-	chatService := chat_service_rest.New(chatRepo)
+	chatCache := chat_redis_rest.New()
+	chatService := chat_service_rest.New(chatRepo, chatCache)
 	chatServer := chat_rest.New(log, chatService, cfg.SecretKey)
 
 	// auth router
@@ -58,6 +60,7 @@ func New(log *logger.Logger, cfg *config.Config, postgresDB *sqlx.DB) *App {
 		chat.GET("/all-communities", chatServer.GetAllCommunity)
 		chat.GET("/all-members", chatServer.GetAllMembersOfCommunity)
 		chat.GET("/all-bi-messages/:bi-chat-id", chatServer.GetAllBIMessages)
+		chat.GET("/all-community-messages/:community-id", chatServer.GetAllCommunityMessages)
 	}
 
 	return &App{

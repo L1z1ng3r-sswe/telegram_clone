@@ -1595,3 +1595,105 @@
 [90m8:25PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:92[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
 [90m8:25PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
 [90m8:25PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:103[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m11:42AM[0m [31mFTL[0m [1mapp/internal/app/app.go:19[0m[36m >[0m [1mdial tcp 127.0.0.1:5432: connect: connection refused[0m
+[90m11:42AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:83[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m11:42AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m11:42AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m11:42AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/get-all-bi-messages.go:20[0m[36m >[0m [1mall messages getted[0m [36mmessages=[0m[{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":1,"receiver_id":0,"sender_id":2,"type":""},{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":2,"receiver_id":0,"sender_id":1,"type":""}]
+[90m11:47AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m11:47AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:92[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m11:47AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m11:47AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:103[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m11:52AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:83[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m11:52AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m11:52AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m11:52AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/get-all-bi-messages.go:20[0m[36m >[0m [1mall messages getted[0m [36mmessages=[0m[{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":1,"receiver_id":0,"sender_id":2,"type":""},{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":2,"receiver_id":0,"sender_id":1,"type":""}]
+[90m11:53AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m11:53AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:92[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m11:53AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m11:53AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:103[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m11:54AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:83[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m11:54AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m11:54AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m11:54AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/get-all-bi-messages.go:20[0m[36m >[0m [1mall messages getted[0m [36mmessages=[0m[{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":1,"receiver_id":0,"sender_id":2,"type":""},{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":2,"receiver_id":0,"sender_id":1,"type":""}]
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:92[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:103[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:83[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:92[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m11:55AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:103[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m11:56AM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:83[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m11:56AM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m11:56AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m11:56AM[0m [32mINF[0m [1mapp/internal/rest/server/chat/get-all-bi-messages.go:20[0m[36m >[0m [1mall messages getted[0m [36mmessages=[0m[{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":1,"receiver_id":0,"sender_id":2,"type":""},{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":2,"receiver_id":0,"sender_id":1,"type":""}]
+[90m1:06PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:06PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:92[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m1:06PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m1:06PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:103[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m2:29PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:83[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m2:29PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m2:29PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:92[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:103[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:83[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:92[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:103[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:83[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:92[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:103[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:83[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m2:30PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m2:31PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:31PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:92[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:31PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m2:31PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:103[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:85[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/get-all-bi-messages.go:20[0m[36m >[0m [1mall messages getted[0m [36mmessages=[0m[{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":1,"receiver_id":0,"sender_id":2,"type":""},{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":2,"receiver_id":0,"sender_id":1,"type":""}]
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:94[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:105[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:41[0m[36m >[0m [1mHub is running[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:85[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/get-all-bi-messages.go:20[0m[36m >[0m [1mall messages getted[0m [36mmessages=[0m[{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":1,"receiver_id":0,"sender_id":2,"type":""},{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":2,"receiver_id":0,"sender_id":1,"type":""}]
+[90m2:32PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/get-all-bi-messages.go:20[0m[36m >[0m [1mall messages getted[0m [36mmessages=[0m[{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":1,"receiver_id":0,"sender_id":2,"type":""},{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":2,"receiver_id":0,"sender_id":1,"type":""}]
+[90m2:33PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:33PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:94[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m2:33PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:57[0m[36m >[0m [1mHub shutdown completed[0m
+[90m2:33PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:105[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m4:23PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:86[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m4:23PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m4:23PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:42[0m[36m >[0m [1mHub is running[0m
+[90m4:24PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/get-all-bi-messages.go:20[0m[36m >[0m [1mall messages getted[0m [36mmessages=[0m[{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":1,"receiver_id":0,"sender_id":2,"type":""},{"bi_chat_id":12,"community_id":0,"content":"Hello, World!","id":2,"receiver_id":0,"sender_id":1,"type":""}]
+[90m4:25PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/get-all-community-messages.go:21[0m[36m >[0m [1mall messages getted[0m [36mmessages=[0mnull
+[90m4:27PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m4:27PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:95[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m4:27PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:58[0m[36m >[0m [1mHub shutdown completed[0m
+[90m4:27PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:106[0m[36m >[0m [1mHTTP server shutdown completed[0m
+[90m4:27PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:86[0m[36m >[0m [1mServer is running on port 8080[0m
+[90m4:27PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:42[0m[36m >[0m [1mHub is running[0m
+[90m4:27PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:47[0m[36m >[0m [1mServer is running on port 44044[0m
+[90m4:27PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/get-all-community-messages.go:21[0m[36m >[0m [1mall messages getted[0m [36mmessages=[0mnull
+[90m4:33PM[0m [32mINF[0m [1mapp/internal/app/grpc/app.go:55[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m4:33PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:95[0m[36m >[0m [1mGraceful stop the server, signal: interrupt[0m
+[90m4:33PM[0m [32mINF[0m [1mapp/internal/rest/server/chat/server.go:58[0m[36m >[0m [1mHub shutdown completed[0m
+[90m4:33PM[0m [32mINF[0m [1mapp/internal/app/rest/app.go:106[0m[36m >[0m [1mHTTP server shutdown completed[0m

@@ -1,7 +1,6 @@
 package auth_service_rest
 
 import (
-	"net/http"
 	"time"
 
 	models_rest "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/rest/domain/models"
@@ -10,36 +9,36 @@ import (
 	validation_rest "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/rest/utils/validation"
 )
 
-func (s *service) SignUp(user models_rest.UserSignUp, accessTokenExp time.Duration, refreshTokenExp time.Duration, secretKey string) (models_rest.Tokens, models_rest.UserSignUp, error, string, string, int, string) {
+func (s *service) SignUp(user models_rest.UserSignUp, accessTokenExp time.Duration, refreshTokenExp time.Duration, secretKey string) (models_rest.Tokens, models_rest.UserSignUp, *models_rest.Response) {
 	// validation
-	err, errKey, errMsg, code, fileInfo := validation_rest.ValidationSignUp(user.Email, user.Password)
+	err := validation_rest.ValidationSignUp(user.Email, user.Password)
 	if err != nil {
-		return models_rest.Tokens{}, models_rest.UserSignUp{}, err, errKey, errMsg, code, fileInfo
+		return models_rest.Tokens{}, models_rest.UserSignUp{}, err
 	}
 
 	// hash password
-	user.Password, err, errKey, errMsg, code, fileInfo = password_hash_rest.PasswordHasher(user.Password)
+	user.Password, err = password_hash_rest.PasswordHasher(user.Password)
 	if err != nil {
-		return models_rest.Tokens{}, models_rest.UserSignUp{}, err, errKey, errMsg, code, fileInfo
+		return models_rest.Tokens{}, models_rest.UserSignUp{}, err
 	}
 
 	// save new user in db
-	userDB, err, errKey, errMsg, code, fileInfo := s.repo.SignUp(user)
+	userDB, err := s.repo.SignUp(user)
 	if err != nil {
-		return models_rest.Tokens{}, models_rest.UserSignUp{}, err, errKey, errMsg, code, fileInfo
+		return models_rest.Tokens{}, models_rest.UserSignUp{}, err
 	}
 
 	// create access-token
-	accessToken, err, errKey, errMsg, code, fileInfo := tokens_rest.CreateAccessToken(userDB.Id, accessTokenExp, secretKey)
+	accessToken, err := tokens_rest.CreateAccessToken(userDB.Id, accessTokenExp, secretKey)
 	if err != nil {
-		return models_rest.Tokens{}, models_rest.UserSignUp{}, err, errKey, errMsg, code, fileInfo
+		return models_rest.Tokens{}, models_rest.UserSignUp{}, err
 	}
 
 	// create refresh-token
-	refreshToken, err, errKey, errMsg, code, fileInfo := tokens_rest.CreateRefreshToken(userDB.Id, refreshTokenExp, secretKey)
+	refreshToken, err := tokens_rest.CreateRefreshToken(userDB.Id, refreshTokenExp, secretKey)
 	if err != nil {
-		return models_rest.Tokens{}, models_rest.UserSignUp{}, err, errKey, errMsg, code, fileInfo
+		return models_rest.Tokens{}, models_rest.UserSignUp{}, err
 	}
 
-	return models_rest.Tokens{AccessToken: accessToken, RefreshToken: refreshToken}, userDB, nil, "", "", http.StatusOK, ""
+	return models_rest.Tokens{AccessToken: accessToken, RefreshToken: refreshToken}, userDB, nil
 }

@@ -8,8 +8,8 @@ import (
 )
 
 type service interface {
-	SignUp(models_rest.UserSignUp, time.Duration, time.Duration, string) (models_rest.Tokens, models_rest.UserSignUp, error, string, string, int, string)
-	SignIn(models_rest.UserSignIn, time.Duration, time.Duration, string) (models_rest.Tokens, models_rest.UserDB, error, string, string, int, string)
+	SignUp(models_rest.UserSignUp, time.Duration, time.Duration, string) (models_rest.Tokens, models_rest.UserSignUp, *models_rest.Response)
+	SignIn(models_rest.UserSignIn, time.Duration, time.Duration, string) (models_rest.Tokens, models_rest.UserDB, *models_rest.Response)
 }
 
 type server struct {

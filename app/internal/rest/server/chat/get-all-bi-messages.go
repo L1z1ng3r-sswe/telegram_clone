@@ -9,11 +9,11 @@ import (
 func (server *server) GetAllBIMessages(ctx *gin.Context) {
 	biChatId := ctx.Param("bi-chat-id")
 
-	// save in db
-	messages, err, errKey, errMsg, code, fileInfo := server.service.GetAllBIMessages(biChatId)
+	// save to the db
+	messages, err := server.service.GetAllBIMessages(biChatId)
 	if err != nil {
-		server.log.Err(errKey, errMsg, fileInfo)
-		ctx.AbortWithStatusJSON(code, gin.H{errKey: errMsg})
+		server.log.Err(err.ErrKey, err.ErrMsg, err.FileInfo)
+		ctx.AbortWithStatusJSON(err.Code, gin.H{err.ErrKey: err.ErrMsg})
 		return
 	}
 

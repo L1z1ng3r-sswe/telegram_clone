@@ -27,10 +27,10 @@ func (server *server) CreateBIChat(ctx *gin.Context) {
 		return
 	}
 
-	chatDB, err, errKey, errMsg, code, fileInfo := server.service.CreateBIChat(chat)
+	chatDB, err := server.service.CreateBIChat(chat)
 	if err != nil {
-		server.log.Err(errKey, errMsg, fileInfo)
-		ctx.AbortWithStatusJSON(code, gin.H{errKey: errMsg})
+		server.log.Err(err.ErrKey, err.ErrMsg, err.FileInfo)
+		ctx.AbortWithStatusJSON(err.Code, gin.H{err.ErrKey: err.ErrMsg})
 		return
 	}
 

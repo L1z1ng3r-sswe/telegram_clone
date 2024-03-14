@@ -8,8 +8,8 @@ import (
 )
 
 type repo interface {
-	SignUp(user models_rest.UserSignUp) (models_rest.UserSignUp, error, string, string, int, string)
-	SignIn(user models_rest.UserSignIn) (models_rest.UserDB, error, string, string, int, string)
+	SignUp(user models_rest.UserSignUp) (models_rest.UserSignUp, *models_rest.Response)
+	SignIn(user models_rest.UserSignIn) (models_rest.UserDB, *models_rest.Response)
 }
 
 type service struct {

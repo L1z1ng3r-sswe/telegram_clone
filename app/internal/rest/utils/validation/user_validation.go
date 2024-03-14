@@ -5,69 +5,71 @@ import (
 	"fmt"
 	"net/http"
 	"regexp"
+
+	models_rest "github.com/L1z1ng3r-sswe/telegram_clone/app/internal/rest/domain/models"
 )
 
-func ValidationSignUp(email, password string) (error, string, string, int, string) {
-	err, errKey, errMsg, code, fileInfo := isEmailValidSignUp(email)
+func ValidationSignUp(email, password string) *models_rest.Response {
+	err := isEmailValidSignUp(email)
 	if err != nil {
-		return err, errKey, errMsg, code, fileInfo
+		return err
 	}
 
-	err, errKey, errMsg, code, fileInfo = isPasswordValidSignUp(password)
+	err = isPasswordValidSignUp(password)
 	if err != nil {
-		return err, errKey, errMsg, code, fileInfo
+		return err
 	}
 
-	return nil, "", "", http.StatusOK, ""
+	return nil
 }
 
-func isEmailValidSignUp(email string) (error, string, string, int, string) {
+func isEmailValidSignUp(email string) *models_rest.Response {
 	emailRegex := regexp.MustCompile(`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`)
 	if !emailRegex.MatchString(email) {
-		return errors.New("Invalid email format"), "Bad Request", "Invalid email format", http.StatusBadRequest, getFileInfo("user_validation.go")
+		return &models_rest.Response{errors.New("Invalid email format"), "Bad Request", "Invalid email format", http.StatusBadRequest, getFileInfo("user_validation.go")}
 	}
 
-	return nil, "", "", http.StatusOK, ""
+	return nil
 }
 
-func isPasswordValidSignUp(password string) (error, string, string, int, string) {
+func isPasswordValidSignUp(password string) *models_rest.Response {
 	if len(password) < 8 {
-		return errors.New("Password is too short"), "Bad Request", "Password is too short", http.StatusBadRequest, getFileInfo("user_validation.go")
+		return &models_rest.Response{errors.New("Password is too short"), "Bad Request", "Password is too short", http.StatusBadRequest, getFileInfo("user_validation.go")}
 	}
 
-	return nil, "", "", http.StatusOK, ""
+	return nil
 }
 
 //! ======================================== sign-in =================================
 
-func ValidationSignIn(email, password string) (error, string, string, int, string) {
-	err, errKey, errMsg, code, fileInfo := isEmailValidSignIn(email)
+func ValidationSignIn(email, password string) *models_rest.Response {
+	err := isEmailValidSignIn(email)
 	if err != nil {
-		return err, errKey, errMsg, code, fileInfo
+		return err
 	}
 
-	err, errKey, errMsg, code, fileInfo = isPasswordValidSignIn(password)
+	err = isPasswordValidSignIn(password)
 	if err != nil {
-		return err, errKey, errMsg, code, fileInfo
+		return err
 	}
 
-	return nil, "", "", http.StatusOK, ""
+	return nil
 }
 
-func isEmailValidSignIn(email string) (error, string, string, int, string) {
+func isEmailValidSignIn(email string) *models_rest.Response {
 	fmt.Println(email)
 	emailRegex := regexp.MustCompile(`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`)
 	if !emailRegex.MatchString(email) {
-		return errors.New("Invalid email format"), "Bad Request", "Invalid email format", http.StatusBadRequest, getFileInfo("user_validation.go")
+		return &models_rest.Response{errors.New("Invalid email format"), "Bad Request", "Invalid email format", http.StatusBadRequest, getFileInfo("user_validation.go")}
 	}
 
-	return nil, "", "", http.StatusOK, ""
+	return nil
 }
 
-func isPasswordValidSignIn(password string) (error, string, string, int, string) {
+func isPasswordValidSignIn(password string) *models_rest.Response {
 	if len(password) < 8 {
-		return errors.New("Password is too short"), "Bad Request", "Password is too short", http.StatusBadRequest, getFileInfo("user_validation.go")
+		return &models_rest.Response{errors.New("Password is too short"), "Bad Request", "Password is too short", http.StatusBadRequest, getFileInfo("user_validation.go")}
 	}
 
-	return nil, "", "", http.StatusOK, ""
+	return nil
 }

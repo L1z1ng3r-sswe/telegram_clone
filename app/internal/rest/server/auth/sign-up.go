@@ -15,10 +15,10 @@ func (server *server) SignUp(ctx *gin.Context) {
 		return
 	}
 
-	tokens, userDB, err, errKey, errMsg, code, fileInfo := server.service.SignUp(user, server.accessTokenExp, server.refreshTokenExp, server.secretKey)
+	tokens, userDB, err := server.service.SignUp(user, server.accessTokenExp, server.refreshTokenExp, server.secretKey)
 	if err != nil {
-		server.log.Err(errKey, errMsg, fileInfo)
-		ctx.AbortWithStatusJSON(code, gin.H{errKey: errMsg})
+		server.log.Err(err.ErrKey, err.ErrMsg, err.FileInfo)
+		ctx.AbortWithStatusJSON(err.Code, gin.H{err.ErrKey: err.ErrMsg})
 		return
 	}
 

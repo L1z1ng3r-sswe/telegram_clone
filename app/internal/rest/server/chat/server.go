@@ -11,12 +11,13 @@ import (
 )
 
 type service interface {
-	CreateCommunity(comm models_rest.Community) (models_rest.Community, error, string, string, int, string)
-	JoinCommunity(communityMember models_rest.CommunityMember) (models_rest.CommunityMember, error, string, string, int, string)
-	CreateCommunityMessage(msg models_rest.Message) (models_rest.Message, error, string, string, int, string)
-	CreateBIChat(chat models_rest.BIChat) (models_rest.BIChat, error, string, string, int, string)
-	CreateBIMessage(msg models_rest.Message) (models_rest.Message, error, string, string, int, string)
-	GetAllBIMessages(biChatId string) ([]models_rest.Message, error, string, string, int, string)
+	CreateCommunity(comm models_rest.Community) (models_rest.Community, *models_rest.Response)
+	JoinCommunity(communityMember models_rest.CommunityMember) (models_rest.CommunityMember, *models_rest.Response)
+	CreateCommunityMessage(msg models_rest.Message) (models_rest.Message, *models_rest.Response)
+	CreateBIChat(chat models_rest.BIChat) (models_rest.BIChat, *models_rest.Response)
+	CreateBIMessage(msg models_rest.Message) (models_rest.Message, *models_rest.Response)
+	GetAllBIMessages(biChatId string) ([]models_rest.Message, *models_rest.Response)
+	GetAllCommunityMessages(communityId string) ([]models_rest.Message, *models_rest.Response)
 }
 
 type server struct {

@@ -17,10 +17,10 @@ func (server *server) IsAuthMW() gin.HandlerFunc {
 			return
 		}
 
-		userId, err, errKey, errMsg, code, fileInfo := tokens_rest.IsTokenValid(accessToken, server.secretKey)
+		userId, err := tokens_rest.IsTokenValid(accessToken, server.secretKey)
 		if err != nil {
-			server.log.Err(errKey, errMsg, fileInfo)
-			ctx.AbortWithStatusJSON(code, gin.H{errKey: errMsg})
+			server.log.Err(err.ErrKey, err.ErrMsg, err.FileInfo)
+			ctx.AbortWithStatusJSON(err.Code, gin.H{err.ErrKey: err.ErrMsg})
 			return
 		}
 

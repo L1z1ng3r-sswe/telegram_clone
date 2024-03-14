@@ -35,10 +35,10 @@ func (server *server) CreateCommunity(ctx *gin.Context) {
 	}
 
 	// save a new community in the db
-	communityDB, err, errMsg, errKey, code, fileInfo := server.service.CreateCommunity(community)
+	communityDB, err := server.service.CreateCommunity(community)
 	if err != nil {
-		server.log.Err(errKey, errMsg, fileInfo)
-		ctx.AbortWithStatusJSON(code, gin.H{errKey: errMsg})
+		server.log.Err(err.ErrKey, err.ErrMsg, err.FileInfo)
+		ctx.AbortWithStatusJSON(err.Code, gin.H{err.ErrKey: err.ErrMsg})
 		return
 	}
 

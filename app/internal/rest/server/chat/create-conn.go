@@ -27,10 +27,10 @@ func (server *server) CreateConn(ctx *gin.Context) {
 		return
 	}
 
-	userId, err, errMsg, errKey, code, fileInfo := tokens_rest.IsTokenValid(accessToken, server.secretKey)
+	userId, er := tokens_rest.IsTokenValid(accessToken, server.secretKey)
 	if err != nil {
-		server.log.Err(errKey, errMsg, fileInfo)
-		ctx.AbortWithStatusJSON(code, gin.H{errKey: errMsg})
+		server.log.Err(er.ErrKey, er.ErrMsg, er.FileInfo)
+		ctx.AbortWithStatusJSON(er.Code, gin.H{er.ErrKey: er.ErrMsg})
 		return
 	}
 
@@ -96,9 +96,9 @@ func (server *server) handleSendedMessage(cl *models_rest.Client, msg models_res
 			}
 
 			// save in db
-			msgDB, err, errKey, errMsg, _, fileInfo := server.service.CreateBIMessage(msg)
+			msgDB, err := server.service.CreateBIMessage(msg)
 			if err != nil {
-				server.log.Err(errKey, errMsg, fileInfo)
+				server.log.Err(err.ErrKey, err.ErrMsg, err.FileInfo)
 			}
 
 			// send to postman
@@ -115,9 +115,9 @@ func (server *server) handleSendedMessage(cl *models_rest.Client, msg models_res
 		if cl.UserId == msg.SenderId {
 
 			// save in db
-			msgDB, err, errKey, errMsg, _, fileInfo := server.service.CreateCommunityMessage(msg)
+			msgDB, err := server.service.CreateCommunityMessage(msg)
 			if err != nil {
-				server.log.Err(errKey, errMsg, fileInfo)
+				server.log.Err(err.ErrKey, err.ErrMsg, err.FileInfo)
 			}
 
 			server.Hub.BroadcastComm <- msgDB

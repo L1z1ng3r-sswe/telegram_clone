@@ -42,10 +42,10 @@ func (server *server) JoinCommunity(ctx *gin.Context) {
 	}
 
 	// save in a db a new member
-	communityMemberDB, err, errKey, errMsg, code, fileInfo := server.service.JoinCommunity(communityMember)
+	communityMemberDB, err := server.service.JoinCommunity(communityMember)
 	if err != nil {
-		server.log.Err(errKey, errMsg, fileInfo)
-		ctx.AbortWithStatusJSON(code, gin.H{errKey: errMsg})
+		server.log.Err(err.ErrKey, err.ErrMsg, err.FileInfo)
+		ctx.AbortWithStatusJSON(err.Code, gin.H{err.ErrKey: err.ErrMsg})
 		return
 	}
 

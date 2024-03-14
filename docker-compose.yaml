@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "${REST_PORT}:8080"
+    environment:
+      ENV: "local"
+      POSTGRES_PATH: "host=localhost port=5432 password=asyl12345. user=postgres dbname=postgres sslmode=disable"
+      GRPC_PORT: "44044"
+      GRPC_TIMEOUT: "5s"
+      ACCESS_TOKEN_EXP: "1h"
+      REFRESH_TOKEN_EXP: "720h"
+      SECRET_KEY: "fjaksjdfkldsj_sdjlfjdslfjdklja_fdjfkd_ljfdlsjfk_l3-94403920jlfkdj"
+    volumes:
+      - ./config:/app/config    # Mount config directory into the container
+      - ./migrations:/migrations
+
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: asyl12345.
+      POSTGRES_DB: postgres
+    ports:
+      - "5433:5432"
+
+
